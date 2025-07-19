@@ -84,26 +84,37 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
               Positioned(
-                top: screenHeight * 0.45,
+                top: screenHeight * 0.3,
                 bottom: 10,
                 left: 10,
                 right: 10,
                 child: Transform.scale(
-                  scale: 1.2,
-                  child: Image.asset("assets/images/16949.png"),
+                  scale: 1.4,
+                  child: Opacity(
+                    opacity: 0.75,
+                    child: Image.asset("assets/images/16949.png"),
+                  ),
                 ),
               ),
               Positioned(
-                top: screenHeight * 0.35,
+                top: screenHeight * 0.5,
                 left: 0,
                 right: 0,
 
                 child: Align(
+                  alignment: Alignment.center,
                   child: Text(
                     "Hii There!",
                     style: TextStyle(
                       color: isDark ? Colors.white : Colors.black,
-                      fontSize: 50,
+                      fontSize: 55,
+                      shadows: [
+                        Shadow(
+                          offset: Offset(3, 3),
+                          blurRadius: 5.0,
+                          color: isDark ? Colors.black : Colors.white,
+                        ),
+                      ],
                     ),
                   ),
                 ),
