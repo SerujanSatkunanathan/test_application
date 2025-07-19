@@ -40,14 +40,14 @@ class _MainScreenState extends State<MainScreen> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text("Space Alert!"),
-            content: Text("Tap anywhere to change the space colour."),
+            title: const Text("Space Alert!"),
+            content: const Text("Tap anywhere to change the space colour."),
             actions: [
               TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: Text("OK"),
+                child: const Text("OK"),
               ),
             ],
           );
@@ -58,13 +58,12 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    bool isDark =
+    final bool isDark =
         backgroundColour.computeLuminance() <
         0.5; //to find the colour is dark or bright
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
-      top: true,
       child: GestureDetector(
         onTap: colourChange, //Colour will change when the user tap the screen
         child: Container(
@@ -99,7 +98,6 @@ class _MainScreenState extends State<MainScreen> {
                 right: 0,
 
                 child: Align(
-                  alignment: Alignment.center,
                   child: Text(
                     "Hii There!",
                     style: TextStyle(
