@@ -84,19 +84,17 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
               Positioned(
+                top: screenHeight * 0.45,
                 bottom: 10,
                 left: 10,
                 right: 10,
                 child: Transform.scale(
                   scale: 1.2,
-                  child: Image.asset(
-                    "assets/images/16949.png",
-                    width: screenWidth * 0.5,
-                  ),
+                  child: Image.asset("assets/images/16949.png"),
                 ),
               ),
               Positioned(
-                top: screenHeight * 0.33,
+                top: screenHeight * 0.35,
                 left: 0,
                 right: 0,
 
