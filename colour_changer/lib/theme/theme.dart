@@ -6,4 +6,8 @@ class AppTheme {
     primarySwatch: Colors.grey,
     fontFamily: 'Duhit',
   );
+  static ThemeData dark = ThemeData(
+    brightness: Brightness.dark,
+    fontFamily: 'Duhit',
+  );
 }
