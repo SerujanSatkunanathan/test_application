@@ -63,6 +63,7 @@ class _MainScreenState extends State<MainScreen> {
         0.5; //to find the colour is dark or bright
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
+
     return SafeArea(
       child: GestureDetector(
         onTap: colourChange, //Colour will change when the user tap the screen
